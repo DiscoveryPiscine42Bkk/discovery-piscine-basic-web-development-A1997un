@@ -1,0 +1,19 @@
+body{
+  background-color: white;
+  display:flex;
+ 
+ 
+}
+
+.form{
+    width: 100px;
+    height: 50px;
+    border-radius: 5%;
+    pointer-events: fill;
+   
+}
+
+.move{
+    display: flex;
+    
+}
