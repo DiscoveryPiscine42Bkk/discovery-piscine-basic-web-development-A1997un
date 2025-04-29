@@ -6,7 +6,7 @@
     <title>Basics</title>
 
     <style>
-        .main {
+        .texts {
             text-align: center;
             font-size: 100px;
             color: white;
@@ -17,44 +17,63 @@
         }
 
 
-        .images {
+        .container {
             width: auto;
             height: 500px;
             display: flex;
-            justify-content: center;
-
+            justify-content: space-around;
+        
 
         }
 
-        .move {
-            display: flex;
-            margin-top: 50cap;
-            margin-bottom: 50cap;
-            margin-left: 50cap;
-            margin-right: 50cap;
+        hr {
+            
+            border-color: black;
+            border-bottom: 100%;
+            margin-top: 100%;
+
         }
 
-        a {
+
+        p {
+
+            text-align: right;
+
+        }
+
+        img {
+            width: 30vw;
+        }
+
+
+        .card{
             display: flex;
-            position: absolute;
-            bottom: 170px;
+            flex-direction: column;
         }
     </style>
 </head>
 
 <body>
-    <div class="move">
-        <div class="images"><img
+    <h1 class="texts">-so bigger-*</h1>
+
+    <div class="container">
+        <div class="card"> 
+            <img
                 src="https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_2.0,f_auto,w_675/5723515_png/dulcis-cuff--set-%282%29--octagon-cut--pav%C3%A9--multicolored--gold-tone-plated-swarovski-5723515.png">
             <a
-                href="https://www.swarovski.com/en-TH/p-M5723511/Dulcis-cuff-Set-2-Octagon-cut-Pave-Multicolored-Gold-tone-plated/?variantID=5723515">https://www.swarovski.com/en-TH/p-M5723511/Dulcis-cuff-Set-2-Octagon-cut-Pave-Multicolored-Gold-tone-plated/?variantID=5723515</a>
+                href="https://www.swarovski.com/en-TH/p-M5723511/Dulcis-cuff-Set-2-Octagon-cut-Pave-Multicolored-Gold-tone-plated/?variantID=5723515">Item1</a>
         </div>
-        <h1 class="main">-so bigger-*</h1>
-        <div class="images"><img
+        <div class="card"> 
+            <img
                 src="https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_2.0,f_auto,w_675/5705587_png/chroma-tennis-necklace--octagon-cut--multicolored--gold-tone-plated-swarovski-5705587.png">
-                <a href="https://swarovski.com/en-TH/p-M5705587/Chroma-Tennis-necklace-Octagon-cut-Multicolored-Gold-tone-plated/?variantID=5705587">https://swarovski.com/en-TH/p-M5705587/Chroma-Tennis-necklace-Octagon-cut-Multicolored-Gold-tone-plated/?variantID=5705587</a>
+            <a
+                href="https://swarovski.com/en-TH/p-M5705587/Chroma-Tennis-necklace-Octagon-cut-Multicolored-Gold-tone-plated/?variantID=5705587">Item2</a>
         </div>
     </div>
+
+    <hr>
+    </hr>
+    <p>© tmeenkum 2025</p>
 </body>
 
 </html>
