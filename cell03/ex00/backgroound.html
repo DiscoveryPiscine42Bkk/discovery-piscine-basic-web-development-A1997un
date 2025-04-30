@@ -14,13 +14,19 @@
     </div>
 </body>
 
-<script>
+<script defer>
 
     //const multiP = document.getElementById('multiP')
 
     /*function multiP(){
         
     }*/
+
+
+   /*const multiP = () => {
+    document.getElementById("btn").style.width = "500px"
+    console.log(document.getElementById("btn").style.width)
+}*/
  
     const setBg = () => {
         const randomColor = Math.floor(Math.random() * 16777215).toString(16);
@@ -29,6 +35,7 @@
     }
 
     btn.addEventListener("click", setBg);
+    btn.addEventListener("click", multiP);
     //btn.addEventListener("click",multiP);
 
     /*btn.addEventListener("click", ()=>{
