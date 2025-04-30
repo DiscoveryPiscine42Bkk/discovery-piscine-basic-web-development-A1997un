@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    display: flex;
+    background-color: white;
+    height: 300vh;
+    width: auto;
+}
+
+
+.partition1{
+    padding-top: 1.5vh;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    /* background-image: url(image) ; */
+    background-color: aqua;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    
+}
+h1{
+    padding-top: 20vh;
+    color: black;
+}
