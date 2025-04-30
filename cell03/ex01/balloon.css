@@ -1,6 +1,14 @@
 body {
     display: flex;
-    background-image: url("why-sky-blue-2db86ae.jpg");
-    height: 100vh;
+    
+}
+
+.custm {
+    
+    height: 200px;
+    background-color: red;
+    border-radius: 100rem;
+    aspect-ratio: 1/1;
+    
     
 }

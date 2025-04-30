@@ -6,8 +6,63 @@
         <link rel="stylesheet" href="balloon.css">
     </head>
     <body>
-        <div>
-        <balloon id="bln"></balloon>
+        <div id="balloon" class="custm">
+            
         </div>
     </body>
 </html>
+
+<script>
+    
+    let height = 200
+    
+    let balloon = document.getElementById("balloon")
+    let bg = ["red","green","blue"]
+    let index = 0
+    
+    balloon.style.height = height+"px"
+    balloon.style.backgroundColor = bg[index]
+    
+    const growN = () => {
+    // balloon.style.width,balloon.style.height = "900px".replace("px","")
+    // console.log("900px")
+    // console.log("900px".replace("px",""))
+    // console.log(parseInt("900px".replace("px","")))
+    // console.log(typeof(parseInt("900px".replace("px",""))))
+
+        height = height + 10
+        balloon.style.height = height+"px"
+
+    if (height >420){
+        height = 200
+    }    
+        index+=1
+        if (index > 2){
+            index = 0
+        }
+        
+        balloon.style.backgroundColor = bg[index]
+
+    
+         
+    }
+    const poinTer = () => {
+
+        height = height - 5
+        balloon.style.height = height + "px"
+        if (height < 200){
+            height = 200
+        }
+        index-=1
+        if (index < 0){
+            index = 2
+        }
+        balloon.style.backgroundColor = bg[index]
+    }
+    
+
+    balloon.addEventListener('click',growN);
+    balloon.addEventListener('pointerout',poinTer);
+    
+
+</script>
