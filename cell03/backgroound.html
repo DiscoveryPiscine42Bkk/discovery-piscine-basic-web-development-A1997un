@@ -9,21 +9,31 @@
 </head>
 
 <body>
-<div class="move">
-    <button id="btn" class="form">Click me!</button>
-</div>
+    <div class="custm1">
+        <button id="btn" class="custm">Click me!</button>
+    </div>
 </body>
 
 <script>
 
-  const setBg = () => {
-  const randomColor = Math.floor(Math.random()*16777215).toString(16);
-  document.body.style.backgroundColor = "#" + randomColor;
-  color.innerHTML = "#" + randomColor;
-}
+    //const multiP = document.getElementById('multiP')
 
-btn.addEventListener("click", setBg);
-setBg();
+    /*function multiP(){
+        
+    }*/
+ 
+    const setBg = () => {
+        const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+        document.body.style.backgroundColor = "#" + randomColor;
+        //color.innerHTML = "#" + randomColor;
+    }
+
+    btn.addEventListener("click", setBg);
+    //btn.addEventListener("click",multiP);
+
+    /*btn.addEventListener("click", ()=>{
+        multi()
+    });*/
 
 </script>
 

@@ -1,19 +1,24 @@
-body{
-  background-color: white;
-  display:flex;
- 
- 
-}
-
-.form{
-    width: 100px;
-    height: 50px;
-    border-radius: 5%;
-    pointer-events: fill;
-   
-}
-
-.move{
+body {
     display: flex;
-    
+    background-color: white;
+
+
+
+}
+
+.custm {
+    margin: auto;
+    width: 300px;
+    height: 100px;
+    cursor: pointer;
+
+
+
+}
+
+.custm1 {
+    padding: 40vh;
+    margin: auto;
+    justify-items: center;
+    align-items: center;
 }
