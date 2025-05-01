@@ -1,25 +1,90 @@
+*{
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     display: flex;
-    background-color: white;
+    background-color: black;
     height: 300vh;
-    width: auto;
+    width: 100%;
+    flex-direction: column;
+    
 }
 
-
+/* tab */
 .partition1{
-    padding-top: 1.5vh;
-    height: 100px;
+    padding: 1vh;
+    /* height: 50px; */
     width: 100%;
     align-items: center;
     /* background-image: url(image) ; */
-    background-color: aqua;
+    background-color: #805c26;
     position: fixed;
     display: flex;
     justify-content: space-between;
     
 }
-h1{
-    padding-top: 20vh;
-    color: black;
+
+/*ทำให้ไม่เป็นสีหลักของ แทคเอ*/
+
+a{
+  text-decoration: none;
+  color: white;
+
 }
+
+
+
+.icon{
+    color:#805c26;
+}
+
+ .single-day-regular {
+    font-family: "Single Day", cursive;
+    font-weight: 400;
+    font-style: normal;
+    
+  }
+  
+
+
+.group1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 2cap;
+    padding-left: 2cap;
+    cursor: pointer;
+
+}
+.partition1 > .group1 >div >a{
+    font-size: 25px;
+    background-color: inherit;
+    font-weight: 20px;
+    color: white;
+    border: none;
+    
+}
+
+ .fonttab1{
+
+    border: none;
+    background-color: inherit;
+    font-size: 25px;
+ 
+}
+
+/* tab */
+
+/*img*/
+
+  .profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+  }
+
+
