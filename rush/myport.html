@@ -12,21 +12,21 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="myport.css">
-  
+
 </head>
 
 <body>
 
   <div class="partition1">
     <div class="group1">
-      <a class="fonttab1" href="#top"><i class="fa-solid fa-house"></i></a>
+      <a class="fonttab1" href="Home.html"><i class="fa-solid fa-house"></i></a>
       <div class="single-day-regular " style="display: flex;gap: 20px;">
-        
-        <a href="#top">Profile</a>
-        <a href="#page2">Resume</a>
-        <a href="#below">Contact</a>
-        
-       
+
+        <a href="#top"><b>Profile</b></a>
+        <a href="#page2"><b>Resume</b></a>
+        <a href="#page3"><b>Constacts me!</b></a>
+
+
       </div>
     </div>
   </div>
@@ -43,40 +43,62 @@
   <div class="profile"
     style="aspect-ratio:16/9; width: 100%; height: 100vh; background-size: cover; background: url(cat1.jpg);background-repeat: no-repeat; background-position: center; ">
     <img src="profile.png " style="height: 20%;width: auto;">
-    <p class="single-day-regular" style="font-size: 50px;">Terapat Meenkumjorndach</p>
+    <p class="single-day-regular" style="font-size: 50px;"><b>Terapat Meenkumjorndach</b></p>
     <div
-      style="width: 20%; height:100px;display: flex;justify-content: space-evenly;align-items: center; font-size: 50px;padding-bottom: 18%;">
-
-      <a style="color: #808080;" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-      <a style="color: #808080;" href="https://www.facebook.com/"></a><i class="fa-brands fa-instagram"></i></a>
-      <a style="color: #808080;" href="https://www.facebook.com/"></a><i class="fa-brands fa-github"></i></a>
-      <a style="color: #808080;" href="https://www.facebook.com/"></a><i class="fa-solid fa-mobile-screen-button"></i></a>
-
+      style="width: auto; height:100px;display: flex;justify-content: space-evenly;align-items: center; font-size: 50px;padding-bottom: 18%; ">
+     <div style="position: absolute;">
+        <a style="color: #805c26;" href="https://www.facebook.com/share/1AVr4J2sae/?mibextid=wwXIfr"><i class="fa-brands fa-facebook"></i></a>
+        <a style="color: #805c26;" href="https://www.instagram.com/m.terapat?igsh=b2tpamJiM3hhMWY2&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+        <a style="color: #805c26;" href="https://github.com/A1997un"><i class="fa-brands fa-github"></i></a>
+        <a style="color: #805c26;" href="tel:+66-946349593"><i class="fa-solid fa-mobile-screen-button"></i></a>
+     </div>
     </div>
   </div>
 
 
-<a id="page2"></a>
+  <a id="page2"></a>
   <div class="res">
 
-    <embed src="Terapat.pdf" width="50%" height="1280px" >
-      
+    <embed src="Terapat.pdf" width="100%" height="1320px">
+
 
   </div>
 
-</body>
-<!-- 
-<script>
-
-let mybutton = document.getElementById("myBtn");
-
-window.onscroll = function() {scrollFunction()};
-
-function topFunction() {
-  document.body.scrollTop = 0; 
-  document.documentElement.scrollTop = 0; 
-}
+  <a id="page3"></a>
   
-</script> -->
+  <div style="display: flex; height: 100vh ;width: 100%; justify-content: center; padding-top: 10cap;" class="contact">
+    <div style="display: flex;align-items:center; flex-direction: column; gap:25px">
+    <p class="single-day-regular" style="font-size: 50px; color: #805c26;"><b>CONTACTS ME</b></p>
+    <input type="text" placeholder="Name" class="single-day-regular">
+    <input type="text" placeholder="Email" class="single-day-regular">
+    <textarea type="text" placeholder=" Tell me why ?"class="single-day-regular"></textarea>
+    <button onclick= "tell()" class="single-day-regular" style="width: 100px;height: 50px;font-size: 30px;color: white;background-color: #805c26;border-radius: 1rem;cursor: pointer;">SEND</button>
+    <div style="display: flex;height: 100%;flex-direction: column-reverse;">
+      <img src="giphy.gif">
+    </div>
+  </div>
+  </div>
+</div>
+</body>
+
+<script>
+  function tell(){
+    alert("Ain't nothing but a heartache~")
+  }
+</script>
+
+// <!-- 
+// <script>
+
+// let mybutton = document.getElementById("myBtn");
+
+// window.onscroll = function() {scrollFunction()};
+
+// function topFunction() {
+//   document.body.scrollTop = 0; 
+//   document.documentElement.scrollTop = 0; 
+// }
+  
+// </script> -->
 
 </html>

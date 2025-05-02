@@ -4,7 +4,7 @@
 body {
     margin: 0;
     display: flex;
-    background-color: black;
+    background-color: white;
     height: 300vh;
     width: 100%;
     flex-direction: column;
@@ -30,7 +30,7 @@ body {
 a{
   text-decoration: none;
   color: white;
-
+  
 }
 
 
@@ -86,5 +86,21 @@ a{
     
     
   }
+/*img*/
 
+input{
+  display: flex;
+  justify-content: center;
+  font-size: 150%;
+  width: 80%;
+  border-radius: 0.5rem;
+  border-color:gray ;
+  
+}
+textarea{
+  width: 500px;
+  height: 300px;
+  border-radius: 0.5rem;
+  font-size: 150%;
+}
 
