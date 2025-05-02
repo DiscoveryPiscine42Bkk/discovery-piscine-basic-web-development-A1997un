@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <meta charset="UTF-8">
+  <title>Mini To Do List</title>
+  <style>
+    body {
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+ 
+    #new-btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: white;
+      color: black;
+      cursor: pointer;
+      margin-bottom: 15px;
+    }
+ 
+    #new-btn:hover {
+      background-color: white;
+    }
+ 
+    #ft_list {
+      border: 1px solid #ccc;
+      background-color: #fff;
+      padding: 10px;
+      min-height: 100px;
+      max-width: 400px;
+    }
+ 
+    .todo {
+      padding: 10px;
+      margin-bottom: 5px;
+      background-color: #e0e0e0;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+ 
+    .todo:hover {
+      background-color: #d6d6d6;
+    }
+  </style>
+</head>
+<body>
+  <button id="new-btn">New</button>
+  <div id="ft_list"></div>
+ 
+</body>
+
+<script>
+
+$(document).ready(function() {
+    const $ftList = $("#ft_list");
+    const $newBtn = $("#new-btn");
+  
+
+    const saved = getCookie("todos");
+    if (saved) {
+      const todos = JSON.parse(saved);
+      todos.forEach(text => createTodo(text, false));
+    }
+  
+
+    $newBtn.on("click", function() {
+      const text = prompt("Enter a new TO DO:");
+      if (text && text.trim() !== "") {
+        createTodo(text.trim(), true);
+      }
+    });
+  
+
+    function createTodo(text, save = true) {
+      const $todo = $("<div>").addClass("todo").text(text);
+  
+ 
+      $todo.on("click", function() {
+        if (confirm("Do you really want to delete this TO DO?")) {
+          $todo.remove();
+          updateCookie();
+        }
+      });
+  
+     
+      $ftList.prepend($todo);
+  
+    
+      if (save) updateCookie();
+    }
+  
+ 
+    function updateCookie() {
+      const todos = [];
+      $(".todo").each(function() {
+        todos.push($(this).text());
+      });
+      document.cookie = "todos=" + JSON.stringify(todos) + ";path=/";
+    }
+  
+
+    function getCookie(name) {
+      const value = `; ${document.cookie}`;
+      const parts = value.split(`; ${name}=`);
+      if (parts.length === 2) return parts.pop().split(";").shift();
+    }
+  });
+
+</script>
+</html>

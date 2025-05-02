@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Balloon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="balloon.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="balloon" class="custm"></div>
+
+    <script>
+        $(document).ready(function () {
+            let height = 200;
+            let bg = ["red", "green", "blue"];
+            let index = 0;
+
+            $("#balloon").css({
+                height: height + "px",
+                backgroundColor: bg[index]
+            });
+
+            const growN = () => {
+                height += 10;
+                if (height > 420) height = 200;
+
+                index = (index + 1) % bg.length;
+
+                $("#balloon").css({
+                    height: height + "px",
+                    backgroundColor: bg[index]
+                });
+            };
+
+            const poinTer = () => {
+                height -= 5;
+                if (height < 200) height = 200;
+
+                index = (index - 1 + bg.length) % bg.length;
+
+                $("#balloon").css({
+                    height: height + "px",
+                    backgroundColor: bg[index]
+                });
+            };
+
+            $("#balloon").on("click", growN);
+            $("#balloon").on("pointerout", poinTer);
+        });
+    </script>
+</body>
+
+</html> 

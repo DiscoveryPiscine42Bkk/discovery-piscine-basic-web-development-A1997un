@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    
+}
+
+.custm {
+    
+    height: 200px;
+    background-color: red;
+    border-radius: 100rem;
+    aspect-ratio: 1/1;
+    
+    
+}
